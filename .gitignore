@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# PyTorch checkpoints and models
+!models/.gitkeep
+
+# Datasets (large files should not be committed)
+data/train/*/*
+data/val/*/*
+data/test/*/*
+!data/**/.gitkeep
+
+# Evaluation outputs
+!results/*.png
+!results/*.json
+!results/.gitkeep
+
+# Environment & Sensitive
+.env
+*.env
+.env.*
+
+# Streamlit
+.streamlit/credentials.toml
+
+# OS files & caches
+.cache/
+.DS_Store
+Thumbs.db
+*.log
